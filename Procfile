@@ -1,1 +1,1 @@
-web: sh streamlit_setup.sh && streamlit run login.py
+web: sh streamlit_setup.sh && streamlit run AICare.py
