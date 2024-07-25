@@ -40,7 +40,8 @@ def get_value(val,my_dict):
 			return value
 
 ## Load ML Models 
-@st.cache(allow_output_mutation=True)
+#@st.cache(allow_output_mutation=True)
+@st.cache_data
 def load_model(model_file):
 	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
 	return loaded_model
