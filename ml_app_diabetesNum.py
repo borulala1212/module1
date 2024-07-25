@@ -22,7 +22,8 @@ attrib_info = """
 
 """
 # Load ML Models 
-@st.cache(allow_output_mutation=True)
+@st.cache_data
+#(allow_output_mutation=True)
 def load_model(model_file_rf):
 	loaded_model = joblib.load(open(os.path.join(model_file_rf),"rb"))
 	return loaded_model
