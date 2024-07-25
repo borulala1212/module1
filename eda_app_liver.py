@@ -12,7 +12,7 @@ import seaborn as sns
 import plotly.express as px
 
 #Load data 
-@st.cache
+@st.cache_data
 
 def load_data(ILPD):
 	df = pd.read_csv(ILPD)
